@@ -7,14 +7,16 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import Headers from './Components/Headers/Headers';
+
 import Shop from './Components/Shop/Shop';
 import Orders from './Components/Orders/Orders';
+import Min from './Main/Min';
+
 
 const router = createBrowserRouter ([
   {
     path: "/",
-    element: <Headers></Headers>,
+    element: <Min></Min>,
     children: [
       {
         path: "/",
